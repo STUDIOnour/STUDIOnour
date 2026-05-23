@@ -14,6 +14,19 @@
 <link href="assets/css/f3ef6f4a38f341c8e77d7c49c131d2f7.css" rel="stylesheet">
 <style>
 html, body { background-color: #f3c7cc !important; }
+[data-surface].ws-light-0,
+[data-ws-surface-vars='ws-light-0'],
+[data-surface].ws-light-1,
+[data-surface][class*='ws-custom-light-'],
+[data-ws-surface-vars='ws-light-1'],
+[data-ws-surface-vars^='ws-custom-light-'] {
+  --ws-surface-background-color: 343, 64%, 87.1% !important;
+  --ws-surface-border-color: 343, 64%, 80% !important;
+}
+[data-surface="0"].ws-surface,
+[data-ws-surface] {
+  background-color: hsla(var(--ws-surface-background-color), var(--ws-surface-background-color-opacity, 1)) !important;
+}
 </style>
 <style id="ws-generated-atomic-styles" type="text/css">/* layer: default */
 [mt~="\30 "]{margin-top:0px;}
